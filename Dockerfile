@@ -8,4 +8,4 @@ COPY gen-key.sh gen-key.sh
 COPY start.sh start.sh
 RUN chmod +x gen-key.sh start.sh
 EXPOSE 443
-ENTRYPOINT [ "start.sh" ]
+ENTRYPOINT [ "./start.sh" ]

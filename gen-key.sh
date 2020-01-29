@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ -f /etc/ssl/certs/doregendate ]; then
   doregendate=$(cat /etc/ssl/certs/doregendate)
   nowdate=$(date +"%Y/%m/%d")
