@@ -16,6 +16,8 @@ docker run -d -p 443:443 olicoad/self-sign-nginx-proxy-pass http://example.com
 
 The target defaults to `http://dockerhost` for use with [qoomon/docker-host](https://github.com/qoomon/docker-host) to add self signed https to any existing http server on the host
 
+To change the `client_max_body_size`, set the `MAXBODYSOZE` environment variable for the container. It defaults to `20m`.
+
 With docker-compose:
 
 ```

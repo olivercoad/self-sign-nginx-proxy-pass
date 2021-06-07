@@ -8,4 +8,5 @@ COPY gen-key.sh gen-key.sh
 COPY start.sh start.sh
 RUN chmod +x gen-key.sh start.sh
 EXPOSE 443
+ENV MAXBODYSIZE=20m
 ENTRYPOINT [ "./start.sh" ]
